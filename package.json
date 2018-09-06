@@ -1,0 +1,30 @@
+{
+  "name": "markdown-amp",
+  "version": "1.0.0",
+  "description": "extrair links e texto do markdown",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alinnimp/biblioteca-markdown.git"
+  },
+  "author": "Alinni Monteiro Pessoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alinnimp/biblioteca-markdown/issues"
+  },
+  "homepage": "https://github.com/Alinnimp/biblioteca-markdown#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "nyc": "^13.0.1"
+  }
+}
