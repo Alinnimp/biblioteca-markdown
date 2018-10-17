@@ -5,26 +5,26 @@ const expect = chai.expect;
 
 describe("indexMark", function() {
   describe("#getLinksFromMd", function() {
-    it("Quando nao houver parametro deve lancar um erro.", function() {
-      expect(() => indexMark.getLinksFromMd("")).to.throw("Parametro não encontrado.");
+    it("When there is no parameter, it should throw an error.", function() {
+      expect(() => indexMark.getLinksFromMd("")).to.throw("Parameter not found");
     });
 
-    it("Quando o texto for um numero deve lancar um erro", function () {
+    it("When the text is a number it should throw an error", function () {
       expect(() => indexMark.getLinksFromMd(77)).to.throw();
     });
-    it("Quando o texto for uma string e nao houver url deve retornar um array vazio", function () {
-      expect(indexMark.getLinksFromMd("Erro")).to.deep.equal([]);
+    it("When the text is a string and there is no url it should return an empty array", function () {
+      expect(indexMark.getLinksFromMd("Error")).to.deep.equal([]);
     });
 
-    it("Quando o texto for uma string e houver uma url deve retornar um array com o objeto com a url e o link do markdown", function () {
-      expect(indexMark.getLinksFromMd("Você procura por esse site [google](www.google.com) ?"))
+    it("When the text is a string and there is a url it should return an array with the object with the markdown url and link", function () {
+      expect(indexMark.getLinksFromMd("You search for this site [google](www.google.com) ?"))
       .to.deep.equal([{
         href: "www.google.com",
         text: "google"
       }]);
     });
 
-    it("Quando o texto for uma string e houver tres urls diferentes deve retornar o objeto dentro do array", function () {
+    it("When the text is a string and there are three different urls, it must return the object inside the array", function () {
       expect(indexMark.getLinksFromMd("[labore](https://en.wiktionary.org/wiki/labore), et [dolore](https://en.wiktionary.org/wiki/dolore), henlow [foo](http://foo.com)"))
       .to.deep.equal([
         {href: "https://en.wiktionary.org/wiki/labore", text: "labore"},
