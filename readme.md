@@ -1,36 +1,36 @@
-# Extrair links de arquivo markdown (Node.js) v 1.0.0
+# Extracting links from markdown file (Node.js) v 1.0.0
 
-Essa versão retorna um array com uma url e texto.
+This version returns an array with a url and text.
 
-## Métodos utilizados
+## Methods used
 
 #### getLinksFromMd(textMark);
 
-Exemplo:
+Example:
 
     $node
     > let ConvertLinks = require("biblioteca_markdown") ConvertLinks.getLinksFromMd ("Oi você procura o site [google] (www.google.com)?"); //
 
 ## Version 1.0.0
 
-- Funcionalidades: extrair links e texto do markdown
+- Features: extract links and markdown text.
 
-- Retorna um array com uma url e texto
+- Returns an array with a url and text.
 
-## Instalação
+## Installation
 
-- Você deve ter o node + npm instalados
+- You should have node + npm installed
 
-- Para ver o guia de instalação, visite o [site oficial](https://www.npmjs.com/get-npm)
+- To view the installation guide, visit the [official website](https://www.npmjs.com/get-npm)
 
-- Continue a instalação com:
+- Continue the installation with:
 
       $npm install markdown-amp
 
-## Roadmap do projeto
+## Roadmap from the project
 
-#### Versão 1.0.0 (released)
+#### Version 1.0.0 (released)
 
-- Funcionalidades: extrair links e texto do markdown
+- Features: extract links and markdown text.
 
-- Retorna um array com uma url e texto
+- Returns an array with a url and text.
